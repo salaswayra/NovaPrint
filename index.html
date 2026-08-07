@@ -1,10 +1,32 @@
-<!-- Hola. ¿Estas leyendo esto? wow. -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NovaPrint Soluciones Gráficas S.A.S.</title>
+
+    <!-- ========== SEO / META ETIQUETAS ========== -->
+    <title>Vektraform - Soluciones Gráficas Integrales</title>
+    <meta name="description" content="Vektraform: Soluciones gráficas integrales en diseño, impresión offset, digital, gran formato, serigrafía y acabados. Transformamos tus ideas en impresiones que comunican.">
+    <meta name="keywords" content="impresión, diseño gráfico, gran formato, papelería, publicidad, serigrafía, Bogotá, Vektraform">
+    <meta name="author" content="Vektraform Soluciones Gráficas S.A.S.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Vektraform - Soluciones Gráficas Integrales">
+    <meta property="og:description" content="Transformamos tus ideas en impresiones que comunican. Diseño, impresión offset, digital, gran formato y más.">
+    <meta property="og:image" content="assets/logo-sin-fondo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.vektraform.com">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vektraform - Soluciones Gráficas Integrales">
+    <meta name="twitter:description" content="Transformamos tus ideas en impresiones que comunican.">
+    <meta name="twitter:image" content="assets/logo-sin-fondo.png">
+
+    <!-- ========== FAVICON MEJORADO ========== -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logo-sin-fondo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/logo-sin-fondo.png">
+    <link rel="apple-touch-icon" href="assets/logo-sin-fondo.png">
 
     <!-- Preconnect Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +46,7 @@
     </script>
 
     <style>
+        /* ========== NUEVA PALETA CON ROLES DEFINIDOS ========== */
         :root {
             --color-1: #F2EAE0;
             --color-2: #B4D3D9;
@@ -44,95 +67,18 @@
 
         body {
             font-family: var(--font-primary);
-            background-color: var(--color-1);
+            background-color: var(--color-5);
             color: #333;
             line-height: 1.7;
             overflow-x: hidden;
             padding-top: 76px;
         }
 
-        /* ========== NAVBAR ========== */
-        .navbar {
-            background-color: var(--color-4) !important;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-            transition: all 0.3s ease;
-            z-index: 1030;
-            min-height: 70px;
-        }
-
-        .navbar .navbar-brand {
-            font-weight: 800;
-            font-size: 1.6rem;
-            letter-spacing: -0.5px;
-            color: #fff !important;
-            transition: color 0.3s;
-        }
-
-        .navbar .navbar-brand:hover {
-            color: var(--color-1) !important;
-        }
-
-        .navbar .nav-link {
-            color: rgba(255, 255, 255, 0.9) !important;
-            font-weight: 500;
-            font-size: 0.95rem;
-            padding: 0.5rem 0.85rem !important;
-            transition: color 0.3s, background-color 0.3s;
-            border-radius: 6px;
-            white-space: nowrap;
-        }
-
-        .navbar .nav-link:hover,
-        .navbar .nav-link:focus {
-            color: #fff !important;
-            background-color: rgba(255, 255, 255, 0.15);
-        }
-
-        .navbar .dropdown-menu {
-            background-color: #fff;
-            border: none;
-            border-radius: 10px;
-            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
-            padding: 0.5rem 0;
-            margin-top: 0.6rem;
-            animation: dropdownFade 0.25s ease-out;
-        }
-
-        @keyframes dropdownFade {
-            from {
-                opacity: 0;
-                transform: translateY(-8px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .navbar .dropdown-item {
-            color: #444;
-            font-weight: 500;
-            font-size: 0.9rem;
-            padding: 0.55rem 1.2rem;
-            transition: all 0.2s;
-            border-left: 3px solid transparent;
-        }
-
-        .navbar .dropdown-item:hover {
-            background-color: var(--color-5);
-            color: var(--color-8);
-            border-left-color: var(--color-8);
-        }
-
-        .navbar-toggler {
-            border: 2px solid rgba(255, 255, 255, 0.6);
-            border-radius: 8px;
-            padding: 0.4rem 0.65rem;
-        }
-
-        .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-        }
+        /* ========== FONDOS DE SECCIONES (REEMPLAZAN LAS ANIMACIONES) ========== */
+        .bg-color-1 { background-color: var(--color-1); }
+        .bg-color-3 { background-color: var(--color-3); }
+        .bg-color-5 { background-color: var(--color-5); }
+        .bg-color-6 { background-color: var(--color-6); }
 
         /* ========== HEADER / PARTICLES ========== */
         #inicio {
@@ -141,7 +87,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: var(--color-3);
+            background: linear-gradient(135deg, var(--color-2) 0%, var(--color-3) 100%);
             overflow: hidden;
             text-align: center;
             padding: 2rem;
@@ -160,26 +106,39 @@
         .header-content {
             position: relative;
             z-index: 2;
-            max-width: 850px;
+            max-width: 900px;
+        }
+
+        .header-content .logo-header {
+            width: 160px;
+            height: auto;
+            margin-bottom: 1.5rem;
+            filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.10));
+            animation: floatLogo 3s ease-in-out infinite;
+        }
+
+        @keyframes floatLogo {
+            0%, 100% { transform: translateY(0); }
+            50%      { transform: translateY(-10px); }
         }
 
         .header-content h1 {
-            font-size: clamp(2.4rem, 5.5vw, 4.2rem);
+            font-size: clamp(2.6rem, 6vw, 4.5rem);
             font-weight: 900;
             letter-spacing: -1px;
-            color: #fff;
-            text-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
-            margin-bottom: 1rem;
-            line-height: 1.15;
+            color: #2c2c4a;
+            text-shadow: 0 2px 20px rgba(255,255,255,0.3);
+            margin-bottom: 0.5rem;
+            line-height: 1.1;
         }
 
         .header-content .slogan {
-            font-size: clamp(1.1rem, 2.3vw, 1.55rem);
+            font-size: clamp(1.2rem, 2.5vw, 1.6rem);
             font-weight: 500;
-            color: var(--color-5);
-            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+            color: #4a3f6b;
+            text-shadow: 0 1px 12px rgba(255,255,255,0.2);
             font-style: italic;
-            letter-spacing: 0.3px;
+            letter-spacing: 0.5px;
         }
 
         .header-scroll-indicator {
@@ -187,24 +146,19 @@
             bottom: 30px;
             z-index: 2;
             animation: bounceDown 2s ease-in-out infinite;
-            color: rgba(255, 255, 255, 0.75);
+            color: rgba(44, 44, 74, 0.6);
             font-size: 2rem;
             cursor: pointer;
             transition: color 0.3s;
         }
 
         .header-scroll-indicator:hover {
-            color: #fff;
+            color: #2c2c4a;
         }
 
         @keyframes bounceDown {
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(14px);
-            }
+            0%, 100% { transform: translateY(0); }
+            50%      { transform: translateY(14px); }
         }
 
         /* ========== SECCIONES GENERALES ========== */
@@ -213,9 +167,9 @@
             position: relative;
         }
 
-        /* Más espacio inferior en la sección de beneficios para que respire frente al contacto */
+        /* ESPACIADO EXTRA PARA BENEFICIOS (CORRECCIÓN DE SOLAPAMIENTO) */
         #beneficios {
-            padding-bottom: 9rem;
+            padding-bottom: 11rem;
         }
 
         .section-title {
@@ -223,13 +177,13 @@
             font-size: 2.2rem;
             letter-spacing: -0.5px;
             margin-bottom: 0.5rem;
-            color: var(--color-4);
+            color: var(--color-8);
             text-align: center;
         }
 
         .section-subtitle {
             font-weight: 500;
-            color: #666;
+            color: var(--color-3);
             text-align: center;
             margin-bottom: 3rem;
             font-size: 1.05rem;
@@ -240,7 +194,7 @@
             margin-right: 0.35rem;
         }
 
-        /* ========== FADE SECTIONS (Intersection Observer) ========== */
+        /* ========== FADE SECTIONS ========== */
         .fade-section {
             opacity: 0;
             transform: translateY(40px);
@@ -255,58 +209,83 @@
         /* ========== TARJETAS Y FONDOS ========== */
         .card-custom {
             background-color: #fff;
-            border: 1px solid var(--color-6);
+            border: 1px solid var(--color-7);
             border-radius: 16px;
             padding: 2rem 1.5rem;
-            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
             transition: transform 0.3s, box-shadow 0.3s;
             height: 100%;
         }
 
         .card-custom:hover {
             transform: translateY(-5px);
-            box-shadow: 0 14px 36px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.07);
+        }
+
+        .card-pastel-highlight {
+            background: var(--color-6);
+            border: 2px solid var(--color-7);
+            border-radius: 20px;
+            padding: 2rem 1.8rem;
+            box-shadow: 0 6px 24px rgba(162, 148, 249, 0.08);
+            height: 100%;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-pastel-highlight::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255,255,255,0.5) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .card-pastel-highlight:hover {
+            transform: translateY(-6px) scale(1.01);
+            box-shadow: 0 16px 48px rgba(162, 148, 249, 0.15);
+            border-color: var(--color-8);
+        }
+
+        .card-pastel-highlight h3,
+        .card-pastel-highlight h4 {
+            color: var(--color-4) !important;
+            font-weight: 700;
+        }
+
+        .card-pastel-highlight p {
+            color: #2c2c2c;
+            font-weight: 500;
         }
 
         .card-custom-soft {
-            background-color: var(--color-5);
+            background-color: var(--color-1);
             border: 1px solid var(--color-6);
             border-radius: 16px;
             padding: 2rem 1.5rem;
-            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
             height: 100%;
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .card-custom-soft:hover {
             transform: translateY(-4px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-        }
-
-        /* Clase para tarjeta compacta (Cobertura) */
-        .card-compact {
-            padding: 1.5rem 1.5rem;
-        }
-
-        .bg-soft {
-            background-color: var(--color-5);
-        }
-        .bg-warm {
-            background-color: var(--color-1);
-        }
-        .bg-accent-light {
-            background-color: var(--color-6);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
         }
 
         /* ========== VALORES ========== */
         .valor-item {
-            background-color: #fff;
+            background-color: var(--color-5);
             border-radius: 14px;
             padding: 1.5rem 1rem;
             text-align: center;
-            box-shadow: 0 3px 14px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 3px 14px rgba(0, 0, 0, 0.04);
             transition: all 0.3s;
-            border: 2px solid transparent;
+            border: 2px solid var(--color-6);
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -317,8 +296,8 @@
 
         .valor-item:hover {
             border-color: var(--color-7);
-            box-shadow: 0 10px 28px rgba(162, 148, 249, 0.2);
-            transform: translateY(-4px);
+            box-shadow: 0 10px 28px rgba(162, 148, 249, 0.12);
+            animation: gelatine 0.7s ease-in-out;
         }
 
         .valor-icon {
@@ -332,13 +311,111 @@
             color: #333;
         }
 
-        /* ========== PRODUCTOS Y SERVICIOS (GRID INTERNO) ========== */
+        /* ========== ANIMACIÓN GELATINA ========== */
+        @keyframes gelatine {
+            0%   { transform: scale(1); }
+            30%  { transform: scale(1.04); }
+            60%  { transform: scale(0.97); }
+            80%  { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+
+        /* ========== NAVBAR ========== */
+        .navbar {
+            background-color: var(--color-5) !important;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s ease;
+            z-index: 1030;
+            min-height: 70px;
+        }
+
+        .navbar .navbar-brand {
+            font-weight: 800;
+            font-size: 1.6rem;
+            letter-spacing: -0.5px;
+            color: var(--color-8) !important;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .navbar-brand img {
+            height: 38px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .navbar .navbar-brand:hover img {
+            transform: scale(1.05);
+        }
+
+        .navbar .navbar-brand:hover {
+            color: var(--color-4) !important;
+        }
+
+        .navbar .nav-link {
+            color: #444 !important;
+            font-weight: 500;
+            font-size: 0.95rem;
+            padding: 0.5rem 0.85rem !important;
+            transition: color 0.3s, background-color 0.3s;
+            border-radius: 6px;
+            white-space: nowrap;
+        }
+
+        .navbar .nav-link:hover,
+        .navbar .nav-link:focus {
+            color: var(--color-8) !important;
+            background-color: rgba(162, 148, 249, 0.08);
+        }
+
+        .navbar .dropdown-menu {
+            background-color: #fff;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+            padding: 0.5rem 0;
+            margin-top: 0.6rem;
+            animation: dropdownFade 0.25s ease-out;
+        }
+
+        @keyframes dropdownFade {
+            from { opacity: 0; transform: translateY(-8px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .navbar .dropdown-item {
+            color: #444;
+            font-weight: 500;
+            font-size: 0.9rem;
+            padding: 0.55rem 1.2rem;
+            transition: all 0.2s;
+            border-left: 3px solid transparent;
+        }
+
+        .navbar .dropdown-item:hover {
+            background-color: var(--color-6);
+            color: var(--color-8);
+            border-left-color: var(--color-8);
+        }
+
+        .navbar-toggler {
+            border: 2px solid rgba(155, 142, 199, 0.4);
+            border-radius: 8px;
+            padding: 0.4rem 0.65rem;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(68,68,68,0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        /* ========== PRODUCTOS Y SERVICIOS ========== */
         .producto-card,
         .servicio-card {
-            background-color: #fff;
+            background-color: var(--color-5);
             border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
             transition: all 0.35s;
             height: 100%;
             border: 1px solid var(--color-6);
@@ -347,79 +424,103 @@
         .producto-card:hover,
         .servicio-card:hover {
             transform: translateY(-6px);
-            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 14px 36px rgba(0, 0, 0, 0.08);
         }
 
-        .producto-card img {
+        .producto-card img,
+        .servicio-card img {
             width: 100%;
             height: 220px;
             object-fit: cover;
             display: block;
+            background-color: var(--color-1);
         }
 
-        .producto-card .card-body-custom {
+        .producto-card .card-body-custom,
+        .servicio-card .card-body-custom {
             padding: 1.5rem;
         }
 
-        /* Estilos para los ítems en cuadrícula con fondo diferenciado */
-        .grid-item {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin-bottom: 0.6rem;
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: #333;
-            background-color: #f9f7ff;
-            border: 1px solid #e9e2f7;
-            border-radius: 10px;
-            padding: 0.45rem 0.75rem;
-            transition: all 0.2s ease;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
-        }
+/* ========== MEJORAS EN LA SECCIÓN SERVICIOS ========== */
+#servicios .section-subtitle {
+    color: var(--color-4); /* Más oscuro para mejor contraste */
+}
 
-        .grid-item:hover {
-            background-color: #fff;
-            border-color: var(--color-7);
-            box-shadow: 0 4px 12px rgba(162,148,249,0.12);
-            transform: translateY(-1px);
-        }
+#servicios .grid-item {
+    background-color: #ffffff;
+    border: 2px solid var(--color-6);
+    border-radius: 12px;
+    padding: 0.6rem 1rem;
+    font-weight: 600;
+    color: #333;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    margin-bottom: 0.5rem;
+}
 
-        .grid-item i {
-            color: var(--color-8);
-            font-size: 1rem;
-            flex-shrink: 0;
-        }
+#servicios .grid-item:hover {
+    border-color: var(--color-7);
+    box-shadow: 0 6px 16px rgba(162, 148, 249, 0.12);
+    transform: translateY(-2px);
+    animation: gelatine 0.5s ease;
+}
 
-        .servicio-card {
-            background-color: #fff;
-            border-radius: 16px;
-            padding: 2rem 1.5rem;
-            text-align: center;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
-            transition: all 0.35s;
-            height: 100%;
-            border: 2px solid var(--color-2);
-        }
+#servicios .grid-item i {
+    color: var(--color-8);
+    font-size: 1.1rem;
+}
 
-        .servicio-card:hover {
-            border-color: var(--color-8);
-            box-shadow: 0 16px 40px rgba(162, 148, 249, 0.18);
-            transform: translateY(-6px);
-        }
+#servicios .grid-item i {
+    color: var(--color-8);
+    font-size: 1.1rem;
+}
 
-        .servicio-card .servicio-icon {
-            font-size: 3rem;
-            color: var(--color-8);
-            margin-bottom: 1rem;
-        }
+/* ========== ÍTEMS DE PRODUCTOS CON FONDO BLANCO CLARO E ICONOS MORADOS ========== */
+.grid-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    background-color: #ffffff;          /* Blanco claro */
+    border: 1px solid var(--color-6);
+    border-radius: 10px;
+    padding: 0.45rem 0.75rem;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
 
-        .servicio-card h3 {
-            font-weight: 700;
-            font-size: 1.3rem;
-            color: var(--color-4);
-            margin-bottom: 1.2rem;
-        }
+.grid-item:hover {
+    background-color: #f7f7f7;          /* Gris muy claro al hover */
+    border-color: var(--color-7);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transform: translateY(-2px);
+}
+
+.grid-item i {
+    color: var(--color-8);              /* Icono morado (A294F9) */
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+/* ========== TARJETAS DE NOSOTROS (FONDO BLANCO + MEJORA HOVER) ========== */
+.card-nosotros {
+    background-color: #fff;
+    border: 2px solid var(--color-6);   /* Borde lila claro por defecto */
+    border-radius: 16px;
+    padding: 2rem 1.8rem;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.card-nosotros:hover {
+    background-color: #f5f5f5;          /* Fondo gris claro */
+    border-color: var(--color-4);       /* Borde morado oscuro (#9B8EC7) */
+    animation: gelatine 0.7s ease-in-out;
+}
 
         /* ========== BENEFICIOS ========== */
         .beneficio-item {
@@ -427,16 +528,16 @@
             align-items: center;
             gap: 1rem;
             padding: 1rem 1.2rem;
-            background-color: #fff;
+            background-color: var(--color-5);
             border-radius: 12px;
-            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
             transition: all 0.3s;
             border: 1px solid var(--color-6);
             height: 100%;
         }
 
         .beneficio-item:hover {
-            box-shadow: 0 8px 24px rgba(162, 148, 249, 0.18);
+            box-shadow: 0 8px 24px rgba(162, 148, 249, 0.10);
             border-color: var(--color-7);
             transform: translateX(4px);
         }
@@ -453,48 +554,118 @@
             color: #333;
         }
 
-        /* ========== CONTACTO ========== */
-        .contacto-card {
-            background-color: #fff;
-            border-radius: 20px;
-            padding: 2.5rem 2rem;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
-            border: 1px solid var(--color-6);
-        }
+        /* ========== FONDO GRADIENTE DEL HEADER REUTILIZADO ========== */
+.bg-header-gradient {
+    background: linear-gradient(135deg, var(--color-2) 0%, var(--color-3) 100%);
+}
 
-        .contacto-card .info-line {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            margin-bottom: 1.2rem;
-            font-size: 1rem;
-            color: #444;
-        }
+/* ========== SECCIÓN BENEFICIOS – TARJETAS BLANCAS UNIFORMES ========== */
+#beneficios .card-custom-soft {
+    background-color: #ffffff;          /* Fondo blanco puro */
+    border: 2px solid var(--color-6);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    transition: all 0.3s ease;
+    height: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
 
-        .contacto-card .info-line i {
-            font-size: 1.4rem;
-            color: var(--color-8);
-            flex-shrink: 0;
-            margin-top: 2px;
-        }
+#beneficios .card-custom-soft:hover {
+    border-color: var(--color-4);
+    box-shadow: 0 8px 24px rgba(162, 148, 249, 0.12);
+    animation: gelatine 0.7s ease-in-out;
+}
 
-        .contacto-card .info-line strong {
-            color: #222;
-            display: block;
-            margin-bottom: 0.15rem;
-        }
+#beneficios .card-custom-soft h3 {
+    color: var(--color-4) !important;
+}
+
+#beneficios .card-custom-soft p,
+#beneficios .card-custom-soft li {
+    color: #222;
+}
+
+#beneficios .card-custom-soft hr {
+    border-color: var(--color-6);
+    opacity: 0.5;
+}
+
+/* Ítems pequeños de beneficios (ya eran blancos, solo ajuste hover) */
+#beneficios .beneficio-item {
+    background-color: #ffffff;
+    border: 1px solid var(--color-6);
+    border-radius: 12px;
+    padding: 1rem 1.2rem;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+#beneficios .beneficio-item:hover {
+    border-color: var(--color-7);
+    box-shadow: 0 6px 16px rgba(162, 148, 249, 0.10);
+    transform: translateX(4px);
+}
+
+#beneficios .beneficio-item i {
+    color: var(--color-8);
+    font-size: 1.7rem;
+}
+
+#beneficios .beneficio-item span {
+    font-weight: 600;
+    color: #333;
+}
+
+/* ========== TARJETA DE CONTACTO CON ESTILO DE VALORES (DUPLICADO) ========== */
+.contacto-card {
+    background-color: #ffffff;           /* mismo que .valor-item */
+    border: 2px solid var(--color-6);    /* mismo borde */
+    border-radius: 14px;                /* mismo radio */
+    padding: 2rem 1.8rem;               /* un poco más amplio para el contenido */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04); /* misma sombra */
+    transition: all 0.3s ease;
+}
+
+.contacto-card:hover {
+    border-color: var(--color-4);        /* mismo hover que .valor-item */
+    box-shadow: 0 8px 24px rgba(162, 148, 249, 0.12);
+    animation: gelatine 0.7s ease-in-out;
+}
+
+/* Ajustes de color para los textos e iconos dentro de la card */
+.contacto-card h3 {
+    color: var(--color-4) !important;
+}
+
+.contacto-card .info-line strong {
+    color: var(--color-4);
+}
+
+.contacto-card .info-line i {
+    color: var(--color-8);
+}
+
+.contacto-card hr {
+    border-color: var(--color-6);
+    opacity: 0.5;
+}
 
         /* ========== FOOTER ========== */
         footer {
-            background-color: var(--color-4);
-            color: #fff;
+            background-color: var(--color-1);
+            color: #444;
             padding: 2.5rem 0;
             text-align: center;
+            border-top: 1px solid var(--color-6);
         }
 
         footer .footer-slogan {
             font-style: italic;
-            color: var(--color-5);
+            color: var(--color-8);
             font-size: 1.1rem;
             margin-top: 0.5rem;
         }
@@ -503,6 +674,16 @@
             font-weight: 800;
             font-size: 1.5rem;
             letter-spacing: -0.5px;
+            color: var(--color-4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+        }
+
+        footer .footer-brand img {
+            height: 40px;
+            width: auto;
         }
 
         /* ========== RESPONSIVE ========== */
@@ -536,12 +717,19 @@
                 font-size: 0.8rem;
                 padding: 0.35rem 0.6rem;
             }
+            .header-content .logo-header {
+                width: 110px;
+            }
+            .navbar .navbar-brand img {
+                height: 30px;
+            }
+            .producto-card img,
+            .servicio-card img {
+                height: 170px;
+            }
         }
 
         @media (max-width: 576px) {
-            .producto-card img {
-                height: 170px;
-            }
             .beneficio-item {
                 flex-direction: column;
                 text-align: center;
@@ -551,8 +739,11 @@
             .beneficio-item i {
                 font-size: 2rem;
             }
-            .card-compact {
-                padding: 1.2rem;
+            .card-pastel-highlight {
+                padding: 1.5rem;
+            }
+            .header-content .logo-header {
+                width: 90px;
             }
         }
     </style>
@@ -563,7 +754,8 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#inicio">
-                <i class="bi bi-droplet-fill me-1"></i>NovaPrint
+                <img src="assets/logo-sin-fondo.png" alt="Vektraform - Logo" class="me-2">
+                Vektraform
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Abrir menú de navegación">
                 <span class="navbar-toggler-icon"></span>
@@ -617,7 +809,8 @@
     <section id="inicio">
         <div id="tsparticles"></div>
         <div class="header-content">
-            <h1>NovaPrint Soluciones Gráficas S.A.S.</h1>
+            <img src="assets/logo-sin-fondo.png" alt="Vektraform - Logo principal" class="logo-header">
+            <h1>Vektraform Soluciones Gráficas S.A.S.</h1>
             <p class="slogan">&ldquo;Transformamos tus ideas en impresiones que comunican.&rdquo;</p>
         </div>
         <a href="#nosotros" class="header-scroll-indicator" aria-label="Desplazarse hacia abajo">
@@ -626,48 +819,59 @@
     </section>
 
     <!-- ==================== SECCIÓN: NOSOTROS ==================== -->
-    <section id="nosotros" class="bg-soft fade-section">
+    <section id="nosotros" class="bg-color-6 fade-section">
         <div class="container">
             <h2 class="section-title"><i class="bi bi-building icon-accent"></i>Nosotros</h2>
             <p class="section-subtitle">Conoce más sobre nuestra empresa, misión, visión y filosofía.</p>
 
             <div class="row g-4">
+                <!-- Presentación -->
                 <div class="col-lg-6">
-                    <div class="card-custom-soft">
-                        <h3 class="fw-bold mb-3" style="color: var(--color-4);"><i class="bi bi-hand-index-thumb me-2"></i>Presentación</h3>
-                        <p>Bienvenidos a NovaPrint Soluciones Gráficas S.A.S., una empresa dedicada a ofrecer soluciones integrales en diseño, impresión y publicidad para empresas, instituciones y emprendedores. Nuestro compromiso es brindar productos y servicios con altos estándares de calidad, utilizando tecnología moderna, materiales de excelente desempeño y un equipo humano altamente capacitado.</p>
+                    <div class="card-nosotros">
+                        <h3 class="fw-bold mb-3" style="color: var(--color-8);"><i class="bi bi-hand-index-thumb me-2"></i>Presentación</h3>
+                        <p>Bienvenidos a Vektraform Soluciones Gráficas S.A.S., una empresa dedicada a ofrecer soluciones integrales en diseño, impresión y publicidad para empresas, instituciones y emprendedores. Nuestro compromiso es brindar productos y servicios con altos estándares de calidad, utilizando tecnología moderna, materiales de excelente desempeño y un equipo humano altamente capacitado.</p>
                         <p>Trabajamos para convertir las ideas de nuestros clientes en proyectos gráficos innovadores que fortalezcan su imagen y faciliten la comunicación de sus productos y servicios.</p>
                     </div>
                 </div>
+
+                <!-- ¿Quiénes somos? -->
                 <div class="col-lg-6">
-                    <div class="card-custom-soft">
-                        <h3 class="fw-bold mb-3" style="color: var(--color-4);"><i class="bi bi-question-circle me-2"></i>¿Quiénes somos?</h3>
-                        <p>NovaPrint Soluciones Gráficas S.A.S. es una empresa del sector de las artes gráficas especializada en diseño gráfico, impresión offset, impresión digital, gran formato, serigrafía, flexografía y acabados especiales.</p>
+                    <div class="card-nosotros">
+                        <h3 class="fw-bold mb-3" style="color: var(--color-8);"><i class="bi bi-question-circle me-2"></i>¿Quiénes somos?</h3>
+                        <p>Vektraform Soluciones Gráficas S.A.S. es una empresa del sector de las artes gráficas especializada en diseño gráfico, impresión offset, impresión digital, gran formato, serigrafía, flexografía y acabados especiales.</p>
                         <p>Nuestro objetivo es satisfacer las necesidades de comunicación visual mediante soluciones creativas, eficientes y personalizadas.</p>
                     </div>
                 </div>
+
+                <!-- Misión -->
                 <div class="col-lg-4">
-                    <div class="card-custom">
+                    <div class="card-nosotros">
                         <h4 class="fw-bold mb-2" style="color: var(--color-8);"><i class="bi bi-bullseye me-2"></i>Misión</h4>
                         <p>Brindar soluciones gráficas innovadoras mediante servicios de diseño e impresión de alta calidad, satisfaciendo las necesidades de nuestros clientes con responsabilidad, creatividad, tecnología y compromiso con el medio ambiente.</p>
                     </div>
                 </div>
+
+                <!-- Visión -->
                 <div class="col-lg-4">
-                    <div class="card-custom">
+                    <div class="card-nosotros">
                         <h4 class="fw-bold mb-2" style="color: var(--color-8);"><i class="bi bi-eye me-2"></i>Visión</h4>
                         <p>Ser una empresa líder del sector gráfico en Colombia para el año 2032, reconocida por la calidad de sus productos, innovación tecnológica, excelente servicio al cliente y responsabilidad social y ambiental.</p>
                     </div>
                 </div>
+
+                <!-- Filosofía Corporativa -->
                 <div class="col-lg-4">
-                    <div class="card-custom">
+                    <div class="card-nosotros">
                         <h4 class="fw-bold mb-2" style="color: var(--color-8);"><i class="bi bi-lightbulb me-2"></i>Filosofía Corporativa</h4>
                         <p>Creemos que cada proyecto es una oportunidad para comunicar ideas de manera efectiva. Trabajamos con honestidad, responsabilidad y creatividad, buscando superar las expectativas de nuestros clientes mediante soluciones gráficas de calidad.</p>
                     </div>
                 </div>
+
+                <!-- Sector económico -->
                 <div class="col-12">
-                    <div class="card-custom-soft text-center">
-                        <h4 class="fw-bold mb-2" style="color: var(--color-4);"><i class="bi bi-diagram-3 me-2"></i>Sector económico</h4>
-                        <p class="mb-0">NovaPrint Soluciones Gráficas S.A.S. pertenece al sector secundario de la economía, específicamente al sector de Artes Gráficas e Industria de la Comunicación Gráfica, ya que transforma materias primas en productos impresos mediante procesos industriales.</p>
+                    <div class="card-nosotros text-center">
+                        <h4 class="fw-bold mb-2" style="color: var(--color-8);"><i class="bi bi-diagram-3 me-2"></i>Sector económico</h4>
+                        <p class="mb-0">Vektraform Soluciones Gráficas S.A.S. pertenece al sector secundario de la economía, específicamente al sector de Artes Gráficas e Industria de la Comunicación Gráfica, ya que transforma materias primas en productos impresos mediante procesos industriales.</p>
                     </div>
                 </div>
             </div>
@@ -675,7 +879,7 @@
     </section>
 
     <!-- ==================== SECCIÓN: VALORES ==================== -->
-    <section id="valores" class="bg-warm fade-section">
+    <section id="valores" class="bg-color-1 fade-section">
         <div class="container">
             <h2 class="section-title"><i class="bi bi-star-fill icon-accent"></i>Valores Corporativos</h2>
             <p class="section-subtitle">Los principios que guían nuestro trabajo cada día.</p>
@@ -695,149 +899,151 @@
     </section>
 
     <!-- ==================== SECCIÓN: PRODUCTOS ==================== -->
-    <section id="productos" class="bg-soft fade-section">
-        <div class="container">
-            <h2 class="section-title"><i class="bi bi-box-seam-fill icon-accent"></i>Nuestros Productos</h2>
-            <p class="section-subtitle">Explora nuestras líneas de productos gráficos de alta calidad.</p>
+<section id="productos" class="bg-color-5 fade-section">
+    <div class="container">
+        <h2 class="section-title"><i class="bi bi-box-seam-fill icon-accent"></i>Nuestros Productos</h2>
+        <p class="section-subtitle">Explora nuestras líneas de productos gráficos de alta calidad.</p>
 
-            <!-- Papelería Empresarial -->
-            <div id="productos-papeleria" class="mb-5 pt-3">
-                <h3 class="fw-bold mb-4" style="color: var(--color-4);"><i class="bi bi-file-earmark-text me-2"></i>Papelería Empresarial</h3>
-                <div class="row g-4">
-                    <div class="col-md-6">
-                        <div class="producto-card">
-                            <img src="./image.png" alt="Papelería empresarial - tarjetas y documentos corporativos" loading="lazy">
-                            <div class="card-body-custom">
-                                <div class="row g-2">
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Tarjetas de presentación</div></div>
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Hojas membrete</div></div>
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Sobres corporativos</div></div>
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Facturas</div></div>
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Carpetas institucionales</div></div>
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Talonarios</div></div>
-                                </div>
+        <!-- Papelería Empresarial -->
+        <div id="productos-papeleria" class="mb-5 pt-3">
+            <h3 class="fw-bold mb-4" style="color: var(--color-4);"><i class="bi bi-file-earmark-text me-2"></i>Papelería Empresarial</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="producto-card">
+                        <img src="assets/papeleria-empresarial.jpg" alt="Papelería empresarial - tarjetas y documentos corporativos Vektraform" loading="lazy">
+                        <div class="card-body-custom">
+                            <div class="row g-2">
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Tarjetas de presentación</div></div>
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Hojas membrete</div></div>
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Sobres corporativos</div></div>
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Facturas</div></div>
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Carpetas institucionales</div></div>
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Talonarios</div></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 d-flex align-items-center">
-                        <p class="text-muted fs-5">Productos esenciales para la identidad corporativa de tu empresa, elaborados con materiales de primera calidad y acabados profesionales que reflejan seriedad y compromiso.</p>
                     </div>
                 </div>
-            </div>
-
-            <!-- Publicidad Impresa -->
-            <div id="productos-publicidad" class="mb-5 pt-3">
-                <h3 class="fw-bold mb-4" style="color: var(--color-4);"><i class="bi bi-megaphone me-2"></i>Publicidad Impresa</h3>
-                <div class="row g-4">
-                    <div class="col-md-6">
-                        <div class="producto-card">
-                            <img src="./image.png" alt="Publicidad impresa - volantes y folletos" loading="lazy">
-                            <div class="card-body-custom">
-                                <div class="row g-2">
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Volantes</div></div>
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Afiches</div></div>
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Plegables</div></div>
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Catálogos</div></div>
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Revistas</div></div>
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Folletos</div></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 d-flex align-items-center">
-                        <p class="text-muted fs-5">Material publicitario impreso con tecnología de punta para maximizar el impacto de tus campañas y comunicar tu mensaje de forma efectiva y atractiva.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Gran Formato -->
-            <div id="productos-gran-formato" class="mb-5 pt-3">
-                <h3 class="fw-bold mb-4" style="color: var(--color-4);"><i class="bi bi-aspect-ratio me-2"></i>Gran Formato</h3>
-                <div class="row g-4">
-                    <div class="col-md-6">
-                        <div class="producto-card">
-                            <img src="./image.png" alt="Impresión de gran formato - pendones y lonas" loading="lazy">
-                            <div class="card-body-custom">
-                                <div class="row g-2">
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Pendones</div></div>
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Lonas</div></div>
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Backing</div></div>
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Avisos</div></div>
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Vinilos adhesivos</div></div>
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Microperforados</div></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 d-flex align-items-center">
-                        <p class="text-muted fs-5">Soluciones en gran formato para eventos, ferias, puntos de venta y exteriores, con materiales resistentes y acabados de alto impacto visual.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Material POP -->
-            <div id="productos-pop" class="mb-5 pt-3">
-                <h3 class="fw-bold mb-4" style="color: var(--color-4);"><i class="bi bi-shop me-2"></i>Material POP</h3>
-                <div class="row g-4">
-                    <div class="col-md-6">
-                        <div class="producto-card">
-                            <img src="./image.png" alt="Material POP - displays y empaques" loading="lazy">
-                            <div class="card-body-custom">
-                                <div class="row g-2">
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Display publicitarios</div></div>
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Habladores</div></div>
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Etiquetas</div></div>
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Stickers</div></div>
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Empaques personalizados</div></div>
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Cajas plegadizas</div></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 d-flex align-items-center">
-                        <p class="text-muted fs-5">Elementos publicitarios para el punto de venta que captan la atención del cliente, refuerzan tu marca y potencian las ventas de tus productos.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Editorial -->
-            <div id="productos-editorial" class="mb-4 pt-3">
-                <h3 class="fw-bold mb-4" style="color: var(--color-4);"><i class="bi bi-book me-2"></i>Editorial</h3>
-                <div class="row g-4">
-                    <div class="col-md-6">
-                        <div class="producto-card">
-                            <img src="./image.png" alt="Productos editoriales - libros y revistas" loading="lazy">
-                            <div class="card-body-custom">
-                                <div class="row g-2">
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Libros</div></div>
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Revistas</div></div>
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Agendas</div></div>
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Cuadernos</div></div>
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Manuales</div></div>
-                                    <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Catálogos empresariales</div></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 d-flex align-items-center">
-                        <p class="text-muted fs-5">Publicaciones editoriales con encuadernación profesional, impresión nítida y acabados de alta durabilidad para todo tipo de contenidos.</p>
-                    </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <p class="text-muted fs-5">Productos esenciales para la identidad corporativa de tu empresa, elaborados con materiales de primera calidad y acabados profesionales que reflejan seriedad y compromiso.</p>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- ==================== SECCIÓN: SERVICIOS ==================== -->
-    <section id="servicios" class="bg-warm fade-section">
-        <div class="container">
-            <h2 class="section-title"><i class="bi bi-tools icon-accent"></i>Nuestros Servicios</h2>
-            <p class="section-subtitle">Acompañamos tu proyecto desde la idea hasta el producto final.</p>
-
+        <!-- Publicidad Impresa -->
+        <div id="productos-publicidad" class="mb-5 pt-3">
+            <h3 class="fw-bold mb-4" style="color: var(--color-4);"><i class="bi bi-megaphone me-2"></i>Publicidad Impresa</h3>
             <div class="row g-4">
-                <!-- Diseño Gráfico -->
-                <div class="col-lg-6" id="servicios-diseno">
-                    <div class="servicio-card">
-                        <div class="servicio-icon"><i class="bi bi-palette"></i></div>
+                <div class="col-md-6">
+                    <div class="producto-card">
+                        <img src="assets/publicidad-impresa.jpg" alt="Publicidad impresa - volantes y folletos Vektraform" loading="lazy">
+                        <div class="card-body-custom">
+                            <div class="row g-2">
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Volantes</div></div>
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Afiches</div></div>
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Plegables</div></div>
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Catálogos</div></div>
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Revistas</div></div>
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Folletos</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <p class="text-muted fs-5">Material publicitario impreso con tecnología de punta para maximizar el impacto de tus campañas y comunicar tu mensaje de forma efectiva y atractiva.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gran Formato -->
+        <div id="productos-gran-formato" class="mb-5 pt-3">
+            <h3 class="fw-bold mb-4" style="color: var(--color-4);"><i class="bi bi-aspect-ratio me-2"></i>Gran Formato</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="producto-card">
+                        <img src="assets/gran-formato.png" alt="Impresión de gran formato - pendones y lonas Vektraform" loading="lazy">
+                        <div class="card-body-custom">
+                            <div class="row g-2">
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Pendones</div></div>
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Lonas</div></div>
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Backing</div></div>
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Avisos</div></div>
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Vinilos adhesivos</div></div>
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Microperforados</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <p class="text-muted fs-5">Soluciones en gran formato para eventos, ferias, puntos de venta y exteriores, con materiales resistentes y acabados de alto impacto visual.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Material POP -->
+        <div id="productos-pop" class="mb-5 pt-3">
+            <h3 class="fw-bold mb-4" style="color: var(--color-4);"><i class="bi bi-shop me-2"></i>Material POP</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="producto-card">
+                        <img src="assets/material-pop.png" alt="Material POP - displays y empaques Vektraform" loading="lazy">
+                        <div class="card-body-custom">
+                            <div class="row g-2">
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Display publicitarios</div></div>
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Habladores</div></div>
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Etiquetas</div></div>
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Stickers</div></div>
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Empaques personalizados</div></div>
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Cajas plegadizas</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <p class="text-muted fs-5">Elementos publicitarios para el punto de venta que captan la atención del cliente, refuerzan tu marca y potencian las ventas de tus productos.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Editorial -->
+        <div id="productos-editorial" class="mb-4 pt-3">
+            <h3 class="fw-bold mb-4" style="color: var(--color-4);"><i class="bi bi-book me-2"></i>Editorial</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="producto-card">
+                        <img src="assets/editorial.png" alt="Productos editoriales - libros y revistas Vektraform" loading="lazy">
+                        <div class="card-body-custom">
+                            <div class="row g-2">
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Libros</div></div>
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Revistas</div></div>
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Agendas</div></div>
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Cuadernos</div></div>
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Manuales</div></div>
+                                <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Catálogos empresariales</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <p class="text-muted fs-5">Publicaciones editoriales con encuadernación profesional, impresión nítida y acabados de alta durabilidad para todo tipo de contenidos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== SECCIÓN: SERVICIOS ==================== -->
+<section id="servicios" class="bg-color-1 fade-section">
+    <div class="container">
+        <h2 class="section-title"><i class="bi bi-tools icon-accent"></i>Nuestros Servicios</h2>
+        <p class="section-subtitle">Acompañamos tu proyecto desde la idea hasta el producto final.</p>
+
+        <div class="row g-4">
+            <!-- Diseño Gráfico -->
+            <div class="col-lg-6" id="servicios-diseno">
+                <div class="servicio-card">
+                    <img src="assets/diseño.jpg" alt="Diseño Gráfico - Vektraform" loading="lazy">
+                    <div class="card-body-custom">
+                        <i class="bi bi-palette servicio-icon"></i>
                         <h3>Diseño Gráfico</h3>
                         <div class="row g-2 justify-content-center">
                             <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Diseño de logotipos</div></div>
@@ -849,10 +1055,14 @@
                         </div>
                     </div>
                 </div>
-                <!-- Impresión -->
-                <div class="col-lg-6" id="servicios-impresion">
-                    <div class="servicio-card">
-                        <div class="servicio-icon"><i class="bi bi-printer"></i></div>
+            </div>
+
+            <!-- Impresión -->
+            <div class="col-lg-6" id="servicios-impresion">
+                <div class="servicio-card">
+                    <img src="assets/impresion.jpg" alt="Impresión - Vektraform" loading="lazy">
+                    <div class="card-body-custom">
+                        <i class="bi bi-printer servicio-icon"></i>
                         <h3>Impresión</h3>
                         <div class="row g-2 justify-content-center">
                             <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Impresión Offset</div></div>
@@ -863,10 +1073,14 @@
                         </div>
                     </div>
                 </div>
-                <!-- Acabados -->
-                <div class="col-lg-6" id="servicios-acabados">
-                    <div class="servicio-card">
-                        <div class="servicio-icon"><i class="bi bi-scissors"></i></div>
+            </div>
+
+            <!-- Acabados -->
+            <div class="col-lg-6" id="servicios-acabados">
+                <div class="servicio-card">
+                    <img src="assets/acabados.jpg" alt="Acabados - Vektraform" loading="lazy">
+                    <div class="card-body-custom">
+                        <i class="bi bi-scissors servicio-icon"></i>
                         <h3>Acabados</h3>
                         <div class="row g-2 justify-content-center">
                             <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Laminado mate y brillante</div></div>
@@ -880,135 +1094,135 @@
                         </div>
                     </div>
                 </div>
-                <!-- Asesoría -->
-                <div class="col-lg-6" id="servicios-asesoria">
-                    <div class="servicio-card">
-                        <div class="servicio-icon"><i class="bi bi-chat-dots"></i></div>
+            </div>
+
+            <!-- Asesoría -->
+            <div class="col-lg-6" id="servicios-asesoria">
+                <div class="servicio-card">
+                    <div class="card-body-custom">
+                        <i class="bi bi-chat-dots servicio-icon"></i>
                         <h3>Asesoría</h3>
-                        <div class="row g-2 justify-content-center">
-                            <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Asesoría en impresión</div></div>
-                            <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Selección de materiales</div></div>
-                            <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Preparación de archivos</div></div>
-                            <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Gestión del color</div></div>
-                            <div class="col-6 col-md-4"><div class="grid-item"><i class="bi bi-check2-circle"></i>Desarrollo de identidad visual</div></div>
+                        <div class="d-flex flex-column gap-2">
+                            <div class="grid-item"><i class="bi bi-check2-circle"></i>Asesoría en impresión</div>
+                            <div class="grid-item"><i class="bi bi-check2-circle"></i>Selección de materiales</div>
+                            <div class="grid-item"><i class="bi bi-check2-circle"></i>Preparación de archivos</div>
+                            <div class="grid-item"><i class="bi bi-check2-circle"></i>Gestión del color</div>
+                            <div class="grid-item"><i class="bi bi-check2-circle"></i>Desarrollo de identidad visual</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- ==================== SECCIÓN: BENEFICIOS, CLIENTES, COBERTURA, CALIDAD ==================== -->
-    <section id="beneficios" class="bg-soft fade-section">
-        <div class="container">
-            <h2 class="section-title"><i class="bi bi-gem icon-accent"></i>¿Por qué elegirnos?</h2>
-            <p class="section-subtitle">Descubre las razones que nos hacen la mejor opción para tus proyectos gráficos.</p>
+<section id="beneficios" class="bg-header-gradient fade-section">
+    <div class="container">
+        <h2 class="section-title" style="color: #2c2c4a;"><i class="bi bi-gem icon-accent" style="color: #2c2c4a;"></i>¿Por qué elegirnos?</h2>
+        <p class="section-subtitle" style="color: #4a3f6b;">Descubre las razones que nos hacen la mejor opción para tus proyectos gráficos.</p>
 
-            <div class="row g-3 mb-5">
-                <div class="col-md-6 col-lg-3"><div class="beneficio-item"><i class="bi bi-patch-check-fill"></i><span>Productos de alta calidad.</span></div></div>
-                <div class="col-md-6 col-lg-3"><div class="beneficio-item"><i class="bi bi-cpu"></i><span>Tecnología moderna.</span></div></div>
-                <div class="col-md-6 col-lg-3"><div class="beneficio-item"><i class="bi bi-person-badge"></i><span>Personal altamente capacitado.</span></div></div>
-                <div class="col-md-6 col-lg-3"><div class="beneficio-item"><i class="bi bi-chat-heart"></i><span>Atención personalizada.</span></div></div>
-                <div class="col-md-6 col-lg-3"><div class="beneficio-item"><i class="bi bi-truck"></i><span>Entregas oportunas.</span></div></div>
-                <div class="col-md-6 col-lg-3"><div class="beneficio-item"><i class="bi bi-cash-coin"></i><span>Precios competitivos.</span></div></div>
-                <div class="col-md-6 col-lg-3"><div class="beneficio-item"><i class="bi bi-calendar-check"></i><span>Cumplimiento de los tiempos de entrega.</span></div></div>
-                <div class="col-md-6 col-lg-3"><div class="beneficio-item"><i class="bi bi-puzzle-fill"></i><span>Soluciones adaptadas a las necesidades del cliente.</span></div></div>
-            </div>
+        <!-- Ítems de beneficios (fondo blanco) -->
+        <div class="row g-3 mb-5">
+            <div class="col-md-6 col-lg-3"><div class="beneficio-item"><i class="bi bi-patch-check-fill"></i><span>Productos de alta calidad.</span></div></div>
+            <div class="col-md-6 col-lg-3"><div class="beneficio-item"><i class="bi bi-cpu"></i><span>Tecnología moderna.</span></div></div>
+            <div class="col-md-6 col-lg-3"><div class="beneficio-item"><i class="bi bi-person-badge"></i><span>Personal altamente capacitado.</span></div></div>
+            <div class="col-md-6 col-lg-3"><div class="beneficio-item"><i class="bi bi-chat-heart"></i><span>Atención personalizada.</span></div></div>
+            <div class="col-md-6 col-lg-3"><div class="beneficio-item"><i class="bi bi-truck"></i><span>Entregas oportunas.</span></div></div>
+            <div class="col-md-6 col-lg-3"><div class="beneficio-item"><i class="bi bi-cash-coin"></i><span>Precios competitivos.</span></div></div>
+            <div class="col-md-6 col-lg-3"><div class="beneficio-item"><i class="bi bi-calendar-check"></i><span>Cumplimiento de los tiempos de entrega.</span></div></div>
+            <div class="col-md-6 col-lg-3"><div class="beneficio-item"><i class="bi bi-puzzle-fill"></i><span>Soluciones adaptadas a las necesidades del cliente.</span></div></div>
+        </div>
 
-            <div class="row g-4">
-                <!-- Tarjeta 1: Clientes -->
-                <div class="col-lg-6">
-                    <div class="card-custom-soft">
-                        <h3 class="fw-bold mb-3" style="color: var(--color-4);"><i class="bi bi-briefcase me-2"></i>Clientes a quienes prestamos nuestros servicios</h3>
-                        <ul class="list-unstyled mb-0">
-                            <li class="py-1"><i class="bi bi-building me-2" style="color: var(--color-8);"></i>Empresas privadas.</li>
-                            <li class="py-1"><i class="bi bi-mortarboard me-2" style="color: var(--color-8);"></i>Instituciones educativas.</li>
-                            <li class="py-1"><i class="bi bi-bank me-2" style="color: var(--color-8);"></i>Entidades públicas.</li>
-                            <li class="py-1"><i class="bi bi-person me-2" style="color: var(--color-8);"></i>Emprendedores.</li>
-                            <li class="py-1"><i class="bi bi-cart me-2" style="color: var(--color-8);"></i>Comercios.</li>
-                            <li class="py-1"><i class="bi bi-megaphone me-2" style="color: var(--color-8);"></i>Agencias de publicidad.</li>
-                            <li class="py-1"><i class="bi bi-emoji-smile me-2" style="color: var(--color-8);"></i>Personas naturales.</li>
-                        </ul>
-                    </div>
+        <!-- Tarjetas grandes con fondo morado claro -->
+        <div class="row g-4 mb-5">
+            <div class="col-lg-6">
+                <div class="card-custom-soft">
+                    <h3 class="fw-bold mb-3"><i class="bi bi-briefcase me-2"></i>Clientes a quienes prestamos nuestros servicios</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li class="py-1"><i class="bi bi-building me-2" style="color: var(--color-4);"></i>Empresas privadas.</li>
+                        <li class="py-1"><i class="bi bi-mortarboard me-2" style="color: var(--color-4);"></i>Instituciones educativas.</li>
+                        <li class="py-1"><i class="bi bi-bank me-2" style="color: var(--color-4);"></i>Entidades públicas.</li>
+                        <li class="py-1"><i class="bi bi-person me-2" style="color: var(--color-4);"></i>Emprendedores.</li>
+                        <li class="py-1"><i class="bi bi-cart me-2" style="color: var(--color-4);"></i>Comercios.</li>
+                        <li class="py-1"><i class="bi bi-megaphone me-2" style="color: var(--color-4);"></i>Agencias de publicidad.</li>
+                        <li class="py-1"><i class="bi bi-emoji-smile me-2" style="color: var(--color-4);"></i>Personas naturales.</li>
+                    </ul>
                 </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card-custom-soft">
+                    <h3 class="fw-bold mb-3"><i class="bi bi-shield-check me-2"></i>Compromiso con la calidad</h3>
+                    <p>En Vektraform Soluciones Gráficas S.A.S. trabajamos bajo procesos de mejora continua, garantizando materiales de excelente calidad, innovación permanente y atención personalizada para asegurar la satisfacción de nuestros clientes.</p>
 
-                <!-- Tarjeta 2: Compromiso con la calidad + Cobertura -->
-                <div class="col-lg-6">
-                    <div class="card-custom-soft">
-                        <!-- Compromiso con la calidad -->
-                        <h3 class="fw-bold mb-3" style="color: var(--color-4);">
-                            <i class="bi bi-shield-check me-2"></i>Compromiso con la calidad
-                        </h3>
-                        <p style="color: #1a1a1a;">En NovaPrint Soluciones Gráficas S.A.S. trabajamos bajo procesos de mejora continua, garantizando materiales de excelente calidad, innovación permanente y atención personalizada para asegurar la satisfacción de nuestros clientes.</p>
-                        
-                        <hr style="border-color: var(--color-6); opacity: 0.6; margin: 1.5rem 0;">
-                        
-                        <!-- Cobertura (mismo estilo) -->
-                        <h3 class="fw-bold mb-3" style="color: var(--color-4);">
-                            <i class="bi bi-geo-alt-fill me-2"></i>Cobertura
-                        </h3>
-                        <p style="color: #1a1a1a;">Prestamos servicios en Bogotá y municipios cercanos, con posibilidad de realizar envíos a diferentes ciudades del país.</p>
-                    </div>
+                    <hr>
+
+                    <h3 class="fw-bold mb-3"><i class="bi bi-geo-alt-fill me-2"></i>Cobertura</h3>
+                    <p>Prestamos servicios en Bogotá y municipios cercanos, con posibilidad de realizar envíos a diferentes ciudades del país.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- ==================== SECCIÓN: CONTACTO ==================== -->
-    <section id="contacto" class="bg-warm fade-section">
-        <div class="container">
-            <h2 class="section-title"><i class="bi bi-envelope-fill icon-accent"></i>Información de contacto</h2>
-            <p class="section-subtitle">Estamos listos para atenderte. ¡Comunícate con nosotros!</p>
+<!-- ==================== SECCIÓN: CONTACTO ==================== -->
+<section id="contacto" class="bg-color-5 fade-section">
+    <div class="container">
+        <h2 class="section-title"><i class="bi bi-envelope-fill icon-accent"></i>Información de contacto</h2>
+        <p class="section-subtitle">Estamos listos para atenderte. ¡Comunícate con nosotros!</p>
 
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="contacto-card">
-                        <h3 class="fw-bold mb-4 text-center" style="color: var(--color-4);">NovaPrint Soluciones Gráficas S.A.S.</h3>
-                        <div class="info-line">
-                            <i class="bi bi-geo-alt-fill"></i>
-                            <div><strong>Dirección:</strong> Calle 50 #25-30, Bogotá D.C.</div>
-                        </div>
-                        <div class="info-line">
-                            <i class="bi bi-telephone-fill"></i>
-                            <div><strong>Teléfono:</strong> (601) 320 4567</div>
-                        </div>
-                        <div class="info-line">
-                            <i class="bi bi-phone"></i>
-                            <div><strong>Celular:</strong> 310 456 7890</div>
-                        </div>
-                        <div class="info-line">
-                            <i class="bi bi-envelope-at"></i>
-                            <div><strong>Correo electrónico:</strong> contacto@novaprint.com</div>
-                        </div>
-                        <div class="info-line">
-                            <i class="bi bi-clock"></i>
-                            <div>
-                                <strong>Horario de atención:</strong><br>
-                                Lunes a viernes: 8:00 a.m. – 6:00 p.m.<br>
-                                Sábados: 8:00 a.m. – 12:00 m.
-                            </div>
-                        </div>
-                        <hr class="my-4" style="border-color: var(--color-6);">
-                        <p class="text-center mb-0 fw-medium" style="color: var(--color-4);">
-                            <i class="bi bi-heart-fill me-1" style="color: var(--color-8);"></i>
-                            Gracias por confiar en NovaPrint Soluciones Gráficas S.A.S.
-                        </p>
-                        <p class="text-center fst-italic mt-1" style="color: var(--color-8);">
-                            Transformamos tus ideas en impresiones que comunican.
-                        </p>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="contacto-card">
+                    <h3 class="fw-bold mb-4 text-center">Vektraform Soluciones Gráficas S.A.S.</h3>
+                    <div class="info-line">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <div><strong>Dirección:</strong> Calle 50 #00-00, Bogotá D.C.</div>
                     </div>
+                    <div class="info-line">
+                        <i class="bi bi-telephone-fill"></i>
+                        <div><strong>Teléfono:</strong> (601) 000 0000</div>
+                    </div>
+                    <div class="info-line">
+                        <i class="bi bi-phone"></i>
+                        <div><strong>Celular:</strong> 310 000 0000</div>
+                    </div>
+                    <div class="info-line">
+                        <i class="bi bi-envelope-at"></i>
+                        <div><strong>Correo electrónico:</strong> contacto@vektraform.com</div>
+                    </div>
+                    <div class="info-line">
+                        <i class="bi bi-clock"></i>
+                        <div>
+                            <strong>Horario de atención:</strong><br>
+                            Lunes a viernes: 8:00 a.m. – 6:00 p.m.<br>
+                            Sábados: 8:00 a.m. – 12:00 p.m.
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <p class="text-center mb-0 fw-medium" style="color: var(--color-4);">
+                        <i class="bi bi-heart-fill me-1" style="color: var(--color-8);"></i>
+                        Gracias por confiar en Vektraform Soluciones Gráficas S.A.S.
+                    </p>
+                    <p class="text-center fst-italic mt-1" style="color: var(--color-8);">
+                        Transformamos tus ideas en impresiones que comunican.
+                    </p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- ==================== FOOTER ==================== -->
     <footer>
         <div class="container">
-            <p class="footer-brand mb-1"><i class="bi bi-droplet-fill me-1"></i>NovaPrint Soluciones Gráficas S.A.S.</p>
+            <p class="footer-brand mb-1">
+                <img src="assets/logo-sin-fondo.png" alt="Vektraform - Logo">
+                Vektraform Soluciones Gráficas S.A.S.
+            </p>
             <p class="footer-slogan mb-2">&ldquo;Transformamos tus ideas en impresiones que comunican.&rdquo;</p>
-            <p class="small mb-0" style="opacity:0.75;">&copy; 2026 NovaPrint Soluciones Gráficas S.A.S. Todos los derechos reservados.</p>
-            <p class="small" style="opacity:0.6;">Bogotá D.C., Colombia | <i class="bi bi-telephone"></i> (601) 320 4567 | <i class="bi bi-envelope"></i> contacto@novaprint.com</p>
+            <p class="small mb-0" style="opacity:0.75;">&copy; 2026 Vektraform Soluciones Gráficas S.A.S. Todos los derechos reservados.</p>
+            <p class="small" style="opacity:0.6;">Bogotá D.C., Colombia | <i class="bi bi-telephone"></i> (601) 000 0000 | <i class="bi bi-envelope"></i> contacto@vektraform.com</p>
         </div>
     </footer>
 
@@ -1028,7 +1242,7 @@
                         density: { enable: true, area: 900 }
                     },
                     color: {
-                        value: ["#F5EFFF", "#F2EAE0", "#CDC1FF", "#ffffff"]
+                        value: ["#ffffff", "#f0eeff", "#d9d6e8", "#e8e6f0"]
                     },
                     shape: { type: "circle" },
                     opacity: {
@@ -1044,7 +1258,7 @@
                     links: {
                         enable: true,
                         distance: 140,
-                        color: "#F5EFFF",
+                        color: "#ffffff",
                         opacity: 0.3,
                         width: 1.2
                     },
@@ -1063,7 +1277,7 @@
                         onClick: { enable: true, mode: "push" }
                     },
                     modes: {
-                        grab: { distance: 180, links: { opacity: 0.5, color: "#CDC1FF" } },
+                        grab: { distance: 180, links: { opacity: 0.5, color: "#cdc1ff" } },
                         push: { quantity: 4 }
                     }
                 },
